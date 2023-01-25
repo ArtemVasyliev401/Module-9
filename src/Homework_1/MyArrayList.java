@@ -26,17 +26,18 @@ public class MyArrayList<T> {
     }
 
     //get(int index) повертає елемент за індексом
-    public T get (int i){
-        if(data[0]== null){
-            throw new IndexOutOfBoundsException("The array is empty");
+    public T get (int index){
+        if(index > data.length || data[index]==null || index < 0){
+            System.out.println("Sorry, you entered the wrong value!");
+            throw new IndexOutOfBoundsException("Sorry, you entered the wrong value. Array size = "+ size);
         }
 
-        return (T)data[i-1];
+        return (T)data[index];
     }
 
     //remove(int index) видаляє елемент із вказаним індексом
     public  void remove( int index) {
-        index = index-1;
+
         if(index > data.length || data[index]==null || index < 0){
             System.out.println("Sorry, you entered the wrong value!");
             throw new IndexOutOfBoundsException("Sorry, you entered the wrong value. Array size = "+ size);

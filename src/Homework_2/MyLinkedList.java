@@ -29,7 +29,7 @@ public class MyLinkedList<T> {
                 throw new IndexOutOfBoundsException("You entered an invalid collection size value " + size);
             }
         MyLinkedNode<T> getIndex = head.getNext();
-            for (int i = 0; i < index-1; i++) {
+            for (int i = 0; i < index; i++) {
                 getIndex = getNextElement(getIndex);
             }
             return getIndex.getData();
@@ -47,7 +47,7 @@ public class MyLinkedList<T> {
                  throw new IndexOutOfBoundsException("You entered an invalid collection size value " + size);
              }
              MyLinkedNode<T> removeIndex = head;
-             for (int i = 0; i < index-1; i++) {
+             for (int i = 0; i < index; i++) {
                  removeIndex = getNextElement(removeIndex);
              }
              removeIndex.setNext(removeIndex.getNext().getNext());

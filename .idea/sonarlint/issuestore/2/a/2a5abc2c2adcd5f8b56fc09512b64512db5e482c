@@ -1,0 +1,13 @@
+
+e
+java:S1192"ODefine a constant instead of duplicating this literal "cars.size() = " 3 times.(·ÓË
+^
+java:S1192"HDefine a constant instead of duplicating this literal "cars = " 3 times.(ãÅ»
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(€Àºö
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ãÅ»
+N	java:S106"9Replace this use of System.out or System.err by a logger.(·ÓË
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Š³´–øÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ãÅ»
+N	java:S106"9Replace this use of System.out or System.err by a logger.(·ÓË
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ãÅ»
+N	java:S106"9Replace this use of System.out or System.err by a logger.(·ÓË

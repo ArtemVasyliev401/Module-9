@@ -80,8 +80,9 @@ public class MyHashMap<K, V> {
         }
         int hash = hash(key);
         MyHashMapNode<K, V> node = bucket[hash];
+
         if (node == null) return null;
-        while (node != null) {
+          while (node != null) {
             if (node.key.equals(key)) {
                 return node.value;
             } else {
@@ -94,12 +95,14 @@ public class MyHashMap<K, V> {
     //remove(Object key) видаляє пару за ключем
     public boolean remove(K key){
         if(key == null) return false;
+
         int hash = hash(key);
         MyHashMapNode<K,V> b = bucket[hash];
+
         if(null == b) return false;
-        MyHashMapNode<K,V> prev = null;
-        while(null !=b){
-            if(b.key.equals (key)){
+         MyHashMapNode<K,V> prev = null;
+            while(null !=b){
+             if(b.key.equals (key)){
                 //delete
                 if(prev == null) {  // first node to remove
                     bucket[hash]=b.next;
